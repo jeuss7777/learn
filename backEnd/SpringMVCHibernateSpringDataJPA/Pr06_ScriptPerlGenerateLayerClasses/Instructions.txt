@@ -1,0 +1,7 @@
+# Instructions
+
+With Perl 5
+perl Pr06_ScriptPerlGenerateLayerClasses.pl PathEntityClasses
+
+Example:
+perl Pr06_ScriptPerlGenerateLayerClasses.pl /home/jarana/workspace/Molly/entities
