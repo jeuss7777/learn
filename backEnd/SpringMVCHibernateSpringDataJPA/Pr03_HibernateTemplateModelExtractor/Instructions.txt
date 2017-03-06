@@ -1,0 +1,23 @@
+# Instructions
+git clone https://github.com/jeuss7777/backEnd-SpringMVCHibernateSpringDataJPA-Pr03_HibernateTemplateModelExtractor.git
+
+This repository contains the minimum files to connect to database using Hibernate in order to extract the Model classes.
+
+The eclipse used was Eclipse Neon, Hibernate Tools plugin installed.
+Pom, just contains Hibernate Tools 5.2.1.FINAL and the MySql Connector Driver
+
+A hibernate.cfg.xml and Hibernate Reverse Enginerring File were created. After this, go to Hibernate Code Generation 
+Configuration. 
+In main Tab:
+  select the Console Configuration
+  Output Directory: Browse the Project and select src (folder)
+  Check the Reverse Engineering Box
+  Package: Select the desired package, in my case was com.jarana.entities
+  
+In Exporters:
+  Use Java 5 syntax
+  Generate EJB3 annotations
+  Domain Code
+  
+  Apply ->  Run
+  
