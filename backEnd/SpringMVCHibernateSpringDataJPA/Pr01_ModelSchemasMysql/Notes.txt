@@ -1,0 +1,5 @@
+The repository for the schemas can be obtain with:
+git clone https://github.com/jeuss7777/backEnd-SpringMVCHibernateSpringDataJPA-Pr01_ModelSchemasMysql.git
+
+These schemas are running in a MySql Database and were obtained with the following command:
+mysqldump -hlocalhost -uroot -p ecomm --compact --no-data > mySql_ecomm.sql
