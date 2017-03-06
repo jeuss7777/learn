@@ -1,0 +1,6 @@
+# Instructions
+# git clone https://github.com/jeuss7777/backEnd-SpringMVCHibernateSpringDataJPA-Pr07_Ex01_JpaEcomm.git
+
+# This code contains an example with the Spring Data JPA Web Services using the Perl Script.
+# This code contains some entities annotated with JsonIgnore, and some other classes throwing the 
+# error - Could not initialize proxy - No session.
