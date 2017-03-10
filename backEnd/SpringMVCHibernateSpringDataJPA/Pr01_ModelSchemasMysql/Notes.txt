@@ -3,3 +3,8 @@ git clone https://github.com/jeuss7777/backEnd-SpringMVCHibernateSpringDataJPA-P
 
 These schemas are running in a MySql Database and were obtained with the following command:
 mysqldump -hlocalhost -uroot -p ecomm --compact --no-data > mySql_ecomm.sql
+
+Execute query from command line
+mysql -uroot -p -hslavedb.mydomain.com mydb_production <<< 'select * from users'
+
+mysql -uroot -p -hslavedb.mydomain.com mydb_production < my_query.sql
