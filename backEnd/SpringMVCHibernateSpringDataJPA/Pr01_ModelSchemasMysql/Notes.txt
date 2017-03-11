@@ -8,3 +8,8 @@ Execute query from command line
 mysql -uroot -p -hslavedb.mydomain.com mydb_production <<< 'select * from users'
 
 mysql -uroot -p -hslavedb.mydomain.com mydb_production < my_query.sql
+
+Adding Foreign Keys:
+  If you are having issues Adding Foreign Keys MySQL and need more details, execute:
+  set foreign_key_checks=0;
+  Then re-execute the query you are having issues.
