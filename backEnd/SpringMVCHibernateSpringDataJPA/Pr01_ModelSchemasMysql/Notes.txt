@@ -13,3 +13,7 @@ Adding Foreign Keys:
   If you are having issues Adding Foreign Keys MySQL and need more details, execute:
   set foreign_key_checks=0;
   Then re-execute the query you are having issues.
+
+Show Warnings;
+  If there are issues when inserting data, but we just saw warnings, execute the following command after the 
+  query with issues:  Show warnings;
