@@ -9,6 +9,9 @@ mysql -uroot -p -hslavedb.mydomain.com mydb_production <<< 'select * from users'
 
 mysql -uroot -p -hslavedb.mydomain.com mydb_production < my_query.sql
 
+If ERROR 1148: The used command is not allowed with this MySQL version
+  Execute mysql -u myuser -p --local-infile somedatabase < my_query.sql
+
 Adding Foreign Keys:
   If you are having issues Adding Foreign Keys MySQL and need more details, execute:
   set foreign_key_checks=0;
