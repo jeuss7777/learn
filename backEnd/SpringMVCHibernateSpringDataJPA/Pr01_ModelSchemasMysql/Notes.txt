@@ -15,6 +15,9 @@ If ERROR 1148: The used command is not allowed with this MySQL version
 
 UNLOAD DATA TO FILES
   mysql -uroot -p ecommv3 -e "select * from PO_Detail order by pd_po_nb" > myPoDet.csv
+  
+UNLOAD DATA TO FILES (CSV)
+  mysql -uroot -p ecommv3 -e "select concat(pd_po_nb,',',sum(pd_subtot_am)) from PO_Detail  GROUP BY pd_po_nb" >          myPOTotals.csv
 
 GROUP BY
   SELECT word, SUM(amount) 
