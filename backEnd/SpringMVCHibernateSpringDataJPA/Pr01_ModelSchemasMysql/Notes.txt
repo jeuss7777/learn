@@ -16,6 +16,11 @@ If ERROR 1148: The used command is not allowed with this MySQL version
 UNLOAD DATA TO FILES
   mysql -uroot -p ecommv3 -e "select * from PO_Detail order by pd_po_nb" > myPoDet.csv
 
+GROUP BY
+  SELECT word, SUM(amount) 
+  FROM Data 
+  Group By word
+
 Adding Foreign Keys:
   If you are having issues Adding Foreign Keys MySQL and need more details, execute:
   set foreign_key_checks=0;
