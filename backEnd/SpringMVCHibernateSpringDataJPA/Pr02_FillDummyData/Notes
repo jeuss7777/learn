@@ -1,8 +1,13 @@
 mockaroo.com
 
-Using a Dataset
+Dataset (using)
 
-pd_sku_nb   Formula    from_dataset("Part", "pa_sku_nb", pa_vendor_nb: pd_vendor_nb)
+   pd_sku_nb   Formula    from_dataset("Part", "pa_sku_nb", pa_vendor_nb: pd_vendor_nb)
 
-Means I will fill the field pd_sku_nb, using column pa_sku_nb from Table Part,
-And I will use the column Pa_vendor_nb (Part) with my field pd_vendor_nb
+   Means I will fill the field pd_sku_nb, using column pa_sku_nb from Table Part,
+   And I will use the column Pa_vendor_nb (Part) with my field pd_vendor_nb
+   
+Operations
+   field("pd_cost_am").to_f*field("pd_po_qy").to_i
+   
+   
