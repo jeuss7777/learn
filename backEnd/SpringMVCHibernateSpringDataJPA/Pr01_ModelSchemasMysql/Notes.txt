@@ -9,8 +9,12 @@ mysql -uroot -p -hslavedb.mydomain.com mydb_production <<< 'select * from users'
 
 mysql -uroot -p -hslavedb.mydomain.com mydb_production < my_query.sql
 
+LOAD DATA INTO TABLES
 If ERROR 1148: The used command is not allowed with this MySQL version
   Execute mysql -u myuser -p --local-infile somedatabase < my_query.sql
+
+UNLOAD DATA TO FILES
+  mysql -uroot -p ecommv3 -e "select * from PO_Detail order by pd_po_nb" > myPoDet.csv
 
 Adding Foreign Keys:
   If you are having issues Adding Foreign Keys MySQL and need more details, execute:
@@ -19,4 +23,5 @@ Adding Foreign Keys:
 
 Show Warnings;
   If there are issues when inserting data, but we just saw warnings, execute the following command after the 
-  query with issues:  Show warnings;
+  query with issues:  
+  Show warnings;
