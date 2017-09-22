@@ -1,0 +1,6 @@
+After executing Perl Script, there will be plenty of failed dependencies.
+
+Execute the following command to remove them:
+find ~/.m2  -name "*.lastUpdated" -exec grep -q "Could not transfer" {} \; -print -exec rm {} \;
+
+ANd now Maven -->  Update
